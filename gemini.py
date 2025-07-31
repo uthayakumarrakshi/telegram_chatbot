@@ -73,11 +73,11 @@ async def generate_from_image(client: Client, message: Message):
         await processing_message.delete()
 @app.on_message(filters.command("start"))
 async def start_command(client: Client, message: Message):
-    await message.reply_text("👋 Bot is working! Use `/gem your prompt` to get a response.")
+    await message.reply_text("👋 Bot is working! Use /gem your prompt to get a response.")
 
 @app.on_message(filters.command("help"))
 async def help_command(client: Client, message: Message):
-    await message.reply_text("🧠 Use `/gem your question` or reply to an image with `/imgai`.")
+    await message.reply_text("🧠 Use /gem your question or reply to an image with /imgai.")
 
 
 if __name__ == '__main__':
